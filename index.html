@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Weather Detector</title>
+    <link rel="icon" href="images/a.png">
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="box">
+            <div class="dateTime">
+               
+                <div class="time">
+                    <span id="hr"></span>
+                    <span>:</span>
+                    <span id="min"></span>
+                    <span>:</span>
+                    <span id="sec"></span>
+                    
+                </div>
+                <div class="date">
+                    <span id="day"></span>
+                    
+                    <span id="month"></span>
+                    
+                    <span id="year"></span>
+                </div>
+            </div>
+            <h1>Weather</h1>
+
+
+            <div class="inputt">
+                <input type="text" placeholder="Enter City Name " spellcheck="false">
+                <button class="btn">
+                    <img src="images/search.png" alt="">
+                </button>
+            </div>
+            <div class="err hide">
+                <img src="images/home.png" alt="">
+                <p>Invalid City Name 🚫</p>
+            </div>
+
+
+            <div class="weather">
+                <img src="images/question.png" alt="" class="weather-icon">
+                <p class="climate">?</p>
+                <p class="temp"></p>
+                <p class="city">________</p>
+
+
+
+                <div class="details">
+                    <div class="col">
+                        <img src="images/humidity.png" alt="">
+                        <div class="humidity">
+                            <p class="strength">0%</p>
+                            <p class="msg">Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="images/wind.png" alt="">
+                        <div class="wind">
+                            <p class="speed">0 Km/h</p>
+                            <p class="msg">Wind</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url(images/cli.jpg) no-repeat center center/cover;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 450px;
+    /* background: linear-gradient(135deg ,rgb(104, 231, 247),rgb(94, 94, 253)); */
+    background: transparent;
+    backdrop-filter: blur(55px);
+    border-radius: 1rem;
+}
+.box h1{
+    color: white;
+    font-size: 2rem;
+    padding: 0.8rem 0.6rem;
+}
+
+
+.dateTime{
+    box-sizing: border-box;
+    height: 30px;
+    color: rgb(116, 123, 132);
+    font-size: 0.8rem;
+    position: absolute;
+    right: 10px;
+    padding: 5px;
+    font-weight: bold;
+    
+}
+
+.inputt{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.inputt input{
+    width: 75%;
+    height: 37px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 19px 0 0 19px;
+    text-align: center;
+    border: 1px solid transparent;
+}
+.inputt input:hover{
+    border: 1px solid orange;
+}
+.btn{
+    width: 23%;
+    height: 38px;
+    border-radius: 0 19px 19px 0;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid transparent;
+}
+.btn:hover{
+    background-color: rgb(219, 214, 214);
+    border: 1px solid orange;
+}
+.btn img{
+    width: 22px;
+    height: 25px;
+    padding-top: 7px;
+    padding-left: 3px;
+}
+.weather{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.weather img{
+    margin-top: 15px;
+    width: 110px;
+    height: 110px;
+    
+}
+.climate{
+    color: white;
+    margin-top: 5px;
+}
+.temp{
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+}
+.city{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    
+}
+
+.details{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.col{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+    color: white;
+
+}
+.col img{
+    aspect-ratio: 3/4;
+    object-fit: contain;
+    width: 22px;
+}
+.strength ,.speed{
+    font-size: 1.2rem;
+}
+
+.err{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.err img{
+    width: 100px;
+    height: 100px;
+}
+.err p{
+    font-size: 1.5rem;
+    color: white;
+
+}
+.hide{
+    display: none;
+}
